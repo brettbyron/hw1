@@ -23,5 +23,6 @@ let weatherData = {
     { temperature: 70, conditions: "Partly Cloudy" }
   ]
 }
+let currentTemperature = weatherData.current.temperature
 
-console.log("Currently it is " + weatherData.current.temperature +" degrees and " + weatherData.current.conditions +"." + " Tomorrow it will be "+ weatherData.forecast[0].temperature +" and "+weatherData.forecast[0].conditions +". The next day we will see "+ weatherData.forecast[1].conditions +" skies, with a temperature of "+weatherData.forecast[1].temperature +".");
+console.log("Currently it is " + currentTemperature +" degrees and " + weatherData.current.conditions.toLowerCase() +"." + " Tomorrow it will be "+ weatherData.forecast[0].temperature +" and "+weatherData.forecast[0].conditions +". The next day we will see "+ weatherData.forecast[1].conditions +" skies, with a temperature of "+weatherData.forecast[1].temperature +".");
